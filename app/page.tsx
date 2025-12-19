@@ -1,7 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
-import linkedin from "@/app/public/socialmedia/linkedin1.svg"
-import instagram from "@/app/public/socialmedia/instagram1.svg"
 import HomeMain from "@/components/Home/HomeMain";
 
 

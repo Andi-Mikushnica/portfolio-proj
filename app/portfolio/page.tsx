@@ -1,6 +1,4 @@
-import React from 'react'
 import { Metadata } from 'next'
-import Image from 'next/image'
 import PortfolioUI from '@/components/Portfolio/PortfolioUI'
 
 export const metadata: Metadata = {

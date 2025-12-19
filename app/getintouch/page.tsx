@@ -1,7 +1,5 @@
-import React from 'react'
 import { Metadata } from 'next'
 import Form from '@/components/GetInTouch/Form'
-Form
 
 export const metadata: Metadata = {
     title: "Andin | Get In Touch",
