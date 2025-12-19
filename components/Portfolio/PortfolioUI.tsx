@@ -7,10 +7,7 @@ import { modals } from '@/lib/AboutUtils/constants'
 import {motion} from 'framer-motion'
 
 
-function PortfolioUI({image, text}: {
-  image: string,
-  text: string,
-}) {
+function PortfolioUI() {
     const [open, setOpen] = useState<boolean>(false)
     const [activeIndex, setActiveIndex] = useState<number>(0);
 
