@@ -15,7 +15,7 @@ function PortfolioUI() {
 
   return (
     <div>
-        <ProjectDisplay open={open} setOpen={setOpen} activeIndex={activeIndex} setActiveIndex={setActiveIndex}/>
+        <ProjectDisplay open={open} setOpenAction={setOpen} activeIndex={activeIndex} setActiveIndexAction={setActiveIndex}/>
       <Modal open={open} setOpen={setOpen} color={"blue"}>
         <motion.div variants={{
           hidden: {opacity: 0},

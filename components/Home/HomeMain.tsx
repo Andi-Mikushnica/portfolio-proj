@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import linkedin from "@/app/public/socialmedia/linkedin1.svg"
-import instagram from "@/app/public/socialmedia/instagram1.svg"
 import { smList } from "@/lib/HomeUtils/constants";
 import {motion} from "framer-motion";
 
@@ -16,7 +14,7 @@ export default function HomeMain() {
             slideRightA: { opacity: 1, x: 0},
         }} initial="slideRightB" animate="slideRightA" transition={{duration: 0.5}} className="hidden md:flex bg-linear-to-l from-gray-900
          to-purple-950 border-y-5 border-l-5 border-purple-700 pt-3">
-          <Image src="/picture1.png" width={475} height={100} alt="picture" className="hover:scale-110 transition-transform duration-500"/>
+          <Image src="/picture1.png" width={475} height={100} alt="picture" loading="eager" className="hover:scale-110 transition-transform duration-1000"/>
         </motion.div>
         {/* ---------- RIGHT-SIDE CONTAINER ---------*/}
         <motion.div variants={{

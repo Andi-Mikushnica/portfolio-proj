@@ -1,5 +1,5 @@
 import React, { Dispatch, SetStateAction } from 'react'
-import dbz from '../../app/public/projpics/dbz-img.png'
+
 
 function Modal({open,
      children,

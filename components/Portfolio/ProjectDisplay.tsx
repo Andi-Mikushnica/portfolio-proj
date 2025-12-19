@@ -6,17 +6,17 @@ import { arrImgs, TypeImgs } from '@/lib/PortfolioUtils/constants';
 
 type Direction = "left" | "right";
 
-    export default function ProjectDisplay({open, setOpen, activeIndex, setActiveIndex}: {
+    export default function ProjectDisplay({open, setOpenAction, activeIndex, setActiveIndexAction}: {
         open: boolean;
-        setOpen: Dispatch<SetStateAction<boolean>>;
+        setOpenAction: Dispatch<SetStateAction<boolean>>;
         activeIndex: number;
-        setActiveIndex: Dispatch<SetStateAction<number>>;
+        setActiveIndexAction: Dispatch<SetStateAction<number>>;
     }) {
 
     const activeImg: TypeImgs = useMemo( () => arrImgs[activeIndex], [activeIndex])
 
     const toggleState = (d: Direction) => {
-        setActiveIndex( (prev) => {
+        setActiveIndexAction( (prev) => {
             if (d === "right"){
                 return prev < arrImgs.length - 1 ? prev + 1 : prev;
             }
@@ -41,7 +41,7 @@ type Direction = "left" | "right";
                         visible: { opacity: 1, y: 0},
                     }} initial="hidden" animate="visible" transition={{duration: 0.5
                     }} className=' p-1 rounded-xl shadow-2xl transition-transform duration-3000s'>
-                        <button onClick={() => setOpen(true)} className='bg-purple-500
+                        <button onClick={() => setOpenAction(true)} className='bg-purple-500
                          text-gray-100 rounded-md p-2 font-bold absolute right-0 bottom-20 translate-x-[-50%] border-4 border-orange-50 shadow-md cursor-pointer
                          hover:scale-110 transition-all duration-300
                          '>Learn More</button>

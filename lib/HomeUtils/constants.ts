@@ -1,5 +1,5 @@
-import linkedin from "@/app/public/socialmedia/linkedin1.svg"
-import instagram from "@/app/public/socialmedia/instagram1.svg"
+import linkedin from "@/app/public/linkedin1.svg"
+import instagram from "@/app/public/instagram1.svg"
 
 export type SocialMediaItem = {
   socialMediaLink: string,

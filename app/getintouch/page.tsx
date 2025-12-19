@@ -1,7 +1,7 @@
 import React from 'react'
 import { Metadata } from 'next'
-import { motion } from 'framer-motion'
-import FormOutcome from '@/components/GetInTouch/FormOutcome'
+import Form from '@/components/GetInTouch/Form'
+Form
 
 export const metadata: Metadata = {
     title: "Andin | Get In Touch",
@@ -16,7 +16,7 @@ function GetInTouchPage(){
           <h1 className='text-3xl font-bold p-7  text-gray-300 '>Let's connect!</h1>
       </div>
       <div className='w-full h-full'>
-        <FormOutcome />
+        <Form />
       </div>
     </div>
   )

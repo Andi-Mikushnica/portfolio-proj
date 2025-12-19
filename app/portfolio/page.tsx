@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     description: "The work I have done."
 }
 
-export default function PortfolioPage({}) {
+export default function PortfolioPage() {
   return (
       <div className='w-full h-full shadow-xl flex flex-col justify-center items-center md:space-y-10 bg-linear-to-r
        from-blue-800 to-purple-700'>

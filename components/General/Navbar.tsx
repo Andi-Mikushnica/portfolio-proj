@@ -20,7 +20,7 @@ export default function Navbar({
     <div className='flex justify-between items-center text-gray-50 w-full'>
         {/*----- LOGO -----*/}
         <div className='bg-purple-600'>
-            <Image src="/logo2.png" width={80} height={40} alt="Andin logo"/>
+            <Image src="/logo2.png" width={80} height={80} alt="Andin logo"/>
         </div>
         {/*----- TABS -----*/}
         <div className='hidden md:flex'>

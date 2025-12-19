@@ -1,5 +1,5 @@
-import dbzImg from '@/app/public/projpics/dbz-img.png'
-import arsImg from '@/app/public/projpics/arsenal-proj.png'
+import dbzImg from '@/app/public/dbz-img.png'
+import arsImg from '@/app/public/arsenal-proj.png'
 import { StaticImageData } from 'next/image';
 
 export interface InfoCardType {
@@ -14,11 +14,11 @@ export const cards: InfoCardType[] = [
     },
     {
         header: "MY TOOLS & TECHNOLOGIES   ",
-        description: "I work primarily with React (Vite) and Next.js, using TypeScript and JavaScript to build scalable, maintainable applications. My front-end stack includes Tailwind, Redux, TanStack Query/Router, and Framer Motion for polished interactions and animations. On the back end, I have experience with FastAPI (Python), MongoDB, Mongoose, and DynamoDB, allowing me to work confidently across the full stack when needed."
+        description: "I work primarily with React (Vite) and Next.js, using TypeScript and JavaScript to build scalable, maintainable applications. My front-end stack primarily includes Tailwind for styling, Redux for State Management, React Hook Form (with Zod) for client-side validation, TanStack Query/Router, and Framer Motion for polished interactions and animations. On the back end, I have experience with FastAPI (Python) for Data Modeling, MongoDB, Mongoose, and DynamoDB - allowing me to work confidently across the full stack when needed."
     },
     {
         header: "EXPERIENCE",
-        description: "I completed an 8-month internship at Waste Creative, where I worked closely with engineers on real company projects. During this time, I gained hands-on experience with Git, React, and TypeScript, contributed to production codebases, and collaborated within a professional development where I participated in code reviews, debugging sessions, integrated RESTful APIs and understood the collaborative responsiblities of a web development team."
+        description: "I completed an 8-month internship at Waste Creative, where I worked closely with engineers on real company projects. During this time, I gained hands-on experience with Git, React, and TypeScript, contributed to production codebases, and collaborated within a professional development where I participated in code reviews, debugging sessions, integrated RESTful APIs and understood the collaborative responsiblities of a web development team. However, I atrribute my broad technical web development knowledge to the vast number of projects I have created through the multifarious web development tools."
     },
 ]
 

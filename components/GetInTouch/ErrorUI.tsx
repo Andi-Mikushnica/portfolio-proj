@@ -1,24 +1,30 @@
 'use client';
-import { FormStateType } from '@/lib/formUtils/formConstants';
 import Link from 'next/link'
-import { Dispatch, SetStateAction } from 'react'
+import {motion} from 'framer-motion'
 
-function ErrorUI({formState, setFormState}: {
-  formState: FormStateType;
-  setFormState: Dispatch<SetStateAction<FormStateType>>
+function ErrorUI({message}: {
+  message: string;
 }) {
 
   return (
-      <div className='flex justify-center flex-col items-center h-full'>
-        <p className="text-gray-300 text-3xl flex justify-center 
-         text-center  py-5 rounded-3xl font-bold">
-          Oops! There was an error loading the page. Please try again later.
-        </p>
-        <div className="
-         flex justify-center items-center mt-4">
-          <button onClick={() => setFormState('incomplete')} className="bg-purple-900 shadow-md text-gray-300 px-6 py-2 rounded-2xl hover:bg-purple-950 cursor-pointer">Go back</button>
-        </div>
+    <motion.div variants={{
+      hidden: {opacity: 0, x: 100},
+      visible: {opacity: 1, x: 0},
+    }} initial="hidden" animate="visible" transition={{duration: 1.5}} className='font-bold w-full h-full text-4xl flex items-center justify-center gap-y-5 flex-col text-gray-200 text-center' >
+      <div>
+        {message}
       </div>
+        <br />
+        <div >
+          <Link href="/">
+            <button className='px-4 py-2 font-bold text-grey-200 bg-purple-700 rounded-md cursor-pointer
+            hover:bg-purple-900 hover:scale-105'>
+              Back to Home
+            </button>
+          </Link>
+        </div>
+    </motion.div>
+
   )
 }
 

@@ -1,12 +1,8 @@
 'use client'
-import { Dispatch, SetStateAction } from 'react'
-import { FormStateType } from '@/lib/formUtils/formConstants'
 import {motion} from 'framer-motion'
+import Link from 'next/link'
 
-function SuccessUI({formState, setFormState}: {
-  formState: FormStateType;
-  setFormState: Dispatch<SetStateAction<FormStateType>>
-}) {
+function SuccessUI() { 
   return (
     <motion.div variants={{
       hidden: {opacity: 0, x: 100},
@@ -17,10 +13,12 @@ function SuccessUI({formState, setFormState}: {
       </div>
         <br />
         <div >
-          <button className='px-4 py-2 font-bold text-grey-200 bg-purple-700 rounded-md cursor-pointer
-           hover:bg-purple-900 hover:scale-105' onClick={() => setFormState('incomplete')}>
-            Back to Home
-          </button>
+          <Link href="/">
+            <button className='px-4 py-2 font-bold text-grey-200 bg-purple-700 rounded-md cursor-pointer
+            hover:bg-purple-900 hover:scale-105'>
+              Back to Home
+            </button>
+          </Link>
         </div>
     </motion.div>
   )

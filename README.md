@@ -99,14 +99,6 @@ This project is optimized for deployment on **Vercel**. Simply connect the repos
 
 ---
 
-## 📌 Future Improvements
-
-* Add more projects to the portfolio section
-* Improve accessibility (ARIA labels, keyboard navigation)
-* Add email notifications for contact form submissions
-
----
-
 ## 📜 License
 
 This project is licensed under the MIT License.
