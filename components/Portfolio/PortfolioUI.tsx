@@ -21,7 +21,7 @@ function PortfolioUI() {
           hidden: {opacity: 0},
           visible: {opacity: 1},
         }} initial="hidden" animate="visible" transition={{duration: 1.5}} className='p-4 text-center shadow-xl bg-linear-to-r from-purple-700
-         to-blue-800 w-[60vw] h-[80vh] 
+         to-blue-800 max-w-screen max-h-screen md:max-w-[60vw]
          rounded-2xl border-5 flex flex-col xl:flex-row justify-center space-y-4 items-center text-gray-200 lg:space-x-4'>
               <Image className='rounded-xl' src={currentModal.imgPath} width={400} height={200} alt={currentModal.title}/>
               <p className='text-md lg:text-lg text-wrap' >
