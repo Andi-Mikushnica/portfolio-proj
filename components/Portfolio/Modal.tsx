@@ -1,0 +1,27 @@
+import React, { Dispatch, SetStateAction } from 'react'
+import dbz from '../../app/public/projpics/dbz-img.png'
+
+function Modal({open,
+     children,
+      setOpen, color}: {
+    open: boolean;
+    children: React.ReactNode;
+    setOpen: Dispatch<SetStateAction<boolean>>;
+    color: string;
+}) {
+    
+    if (!open) return;
+
+  return (
+    <div className={`fixed inset-0 
+    flex justify-center items-center 
+    transition-colors ${open ? 'visible bg-black/20' : 'invisible'}`}> {/* WHOLE BACKGROUND DARKENING */}
+      <div onClick={(e) => e.stopPropagation()} className={`bg-linear-to-r from-${color}-600 to-${color}-700 rounded-xl shadow-p-6 transition-all ${open ? "scale-100 opacity-100" : "scale-125 opacity-0"} `}>
+        <button onClick={() => setOpen(false)} className='absolute top-2 right-2 font-extrabold text-white text-3xl cursor-pointer hover:text-purple-300 p-3'>X</button>
+        {children}
+      </div>
+    </div>
+  )
+}
+
+export default Modal

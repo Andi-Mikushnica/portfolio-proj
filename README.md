@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website
 
-## Getting Started
+A full‑stack personal portfolio website built to showcase who I am, what I do, and the projects I’ve worked on. The site is designed to be clean, modern, and responsive, with smooth animations and a simple user experience.
 
-First, run the development server:
+---
+
+## ✨ Overview
+
+This portfolio website includes:
+
+* A **Home** page with a short introduction and profile image
+* An **About Me** page with info cards describing who I am and what I do
+* A **Portfolio** page showcasing selected projects with links to live demos and GitHub repositories
+* A **Get in Touch** page where visitors can send me messages
+* A **Privacy Policy** page outlining data usage and privacy information
+
+---
+
+## 🚀 Features
+
+* Modern UI with smooth animations using Framer Motion
+* Fully responsive design with Tailwind CSS
+* Form validation using React Hook Form and Zod
+* Backend integration with MongoDB using Mongoose
+* App Router–based routing (Next.js)
+* Type‑safe codebase using TypeScript
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+
+* Next.js (App Router)
+* React
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+* React Hook Form
+* Zod
+
+**Backend**
+
+* MongoDB
+* Mongoose
+
+---
+
+## 📄 Pages
+
+* **Home** – Profile image, name, and short introduction
+* **About Me** – Informational cards detailing who I am and what I do
+* **Portfolio** – Two featured projects with links to live demos and GitHub repositories
+* **Get in Touch** – Contact form for visitors to send messages
+* **Privacy Policy** – Information on data usage and privacy
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Set up environment variables:
+
+Create a `.env.local` file in the root directory and add:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+```
+
+4. Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Deployment
 
-## Learn More
+This project is optimized for deployment on **Vercel**. Simply connect the repository to Vercel and configure the required environment variables.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📌 Future Improvements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Add more projects to the portfolio section
+* Improve accessibility (ARIA labels, keyboard navigation)
+* Add email notifications for contact form submissions
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📜 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.
+
+---
+
+## 🙌 Acknowledgements
+
+Thanks for checking out my portfolio! Feel free to explore the code, reach out via the contact form, or connect with me on GitHub.
