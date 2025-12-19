@@ -1,5 +1,3 @@
-import linkedin from "@/app/public/linkedin1.svg"
-import instagram from "@/app/public/instagram1.svg"
 
 export type SocialMediaItem = {
   socialMediaLink: string,
@@ -8,6 +6,6 @@ export type SocialMediaItem = {
 }
 
 export const smList: SocialMediaItem[] = [
-  {socialMediaLink: "https://www.linkedin.com/in/andin-mik/", path: linkedin, alt: "linkedin logo"},
-  {socialMediaLink: "https://www.instagram.com/andinmik/", path: instagram, alt: "instagram logo"}
+  {socialMediaLink: "https://www.linkedin.com/in/andin-mik/", path: "linkedin1.svg", alt: "linkedin logo"},
+  {socialMediaLink: "https://www.instagram.com/andinmik/", path: "/instagram1.svg", alt: "instagram logo"}
 ]

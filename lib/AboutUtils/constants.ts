@@ -1,7 +1,3 @@
-import dbzImg from '@/app/public/dbz-img.png'
-import arsImg from '@/app/public/arsenal-proj.png'
-import { StaticImageData } from 'next/image';
-
 export interface InfoCardType {
     header: string;
     description: string;
@@ -23,19 +19,19 @@ export const cards: InfoCardType[] = [
 ]
 
 type ModalCard = {
-    imgPath: StaticImageData,
+    imgPath: string,
     title: string,
     text: string,
 }
 
 export const modals: ModalCard[] = [
     {
-        imgPath: dbzImg,
+        imgPath: "/dbz-img.png",
         title: "Dragon Ball Z Wiki",
         text: "— A visually engaging, type-safe web application built with React, TypeScript, and Vite that displays detailed Dragon Ball Z character data sourced from a public API. Styled with Tailwind CSS and brought to life with Framer Motion animations, the project delivers a fast, responsive, and modern user experience. Highlights include clean component architecture, seamless API integration, and a strong focus on performance and UI polish."
     },
     {
-        imgPath: arsImg,
+        imgPath: "/arsenal-proj.png",
         title: "Arsenal Website FC Recreation",
         text: "Arsenal FC Website Recreation — A technically rigorous rebuild of the Arsenal website using Next.js and TypeScript, focused on modern frontend architecture and data integrity. Styled with Tailwind CSS, the application integrates Redux for global state management, TanStack Query for efficient server-state handling, and Zod with React Hook Form for robust, type-safe form validation. Data is sourced from a legacy public Arsenal API, demonstrating the ability to adapt and modernize existing systems while delivering a performant, scalable user experience."
     }
