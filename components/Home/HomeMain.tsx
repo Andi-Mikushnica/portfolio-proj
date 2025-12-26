@@ -38,7 +38,7 @@ export default function HomeMain() {
               {/* ---------- DOWNLOAD CV BUTTON ---------*/}
               <a className=" bg-blue-700 text-white px-4 text-lg 
               cursor-pointer hover:bg-blue-950 border-transparent rounded-lg flex items-center"
-               href="./AndinMIK-CV.pdf" download>
+               href="./Andin-CV.pdf" download>
                 Download CV
               </a>
               {/* -------- SOCIAL MEDIA ICONS ---------- */}
